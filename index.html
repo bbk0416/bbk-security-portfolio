@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ko">
 <head>
   <meta charset="utf-8" />
@@ -116,6 +116,25 @@
             </ul>
           </article>
 
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span>Security Operations</span>
+              <span>Private Repo</span>
+            </div>
+            <h3>OPSHUB</h3>
+            <p>
+              폐쇄망·관제 환경을 가정한 티켓 기반 원격운용 통제 및 감사로그 포털 PoC입니다.
+              작업 티켓을 기준으로 RDP/Web RDP 접속 흐름을 통제하고, 접속 사유·운용 모드·접속 대상·차단 이벤트를 감사로그로 남기는 구조를 설계했습니다.
+            </p>
+            <ul>
+              <li>FastAPI, PostgreSQL, Apache Guacamole 기반 RDP/Web RDP 접속 흐름 구성</li>
+              <li>Active Ticket 없는 접속 차단, 관리자/일반 사용자 권한 분리, 접속 감사로그 기록</li>
+              <li>CSRF, 서명 세션, Host 제한, CSP, Docker 네트워크 분리 등 보안 하드닝 적용</li>
+              <li>상용 PAM 제품이 아닌 보안운영 통제 흐름 검증용 PoC로 관리</li>
+            </ul>
+          </article>
+
           <article class="project-card">
             <div class="project-meta">
               <span>Web3 Security</span>
@@ -222,4 +241,3 @@
   </footer>
 </body>
 </html>
-
