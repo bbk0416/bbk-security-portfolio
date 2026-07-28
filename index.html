@@ -1,218 +1,186 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ko">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>배병권 | Security Portfolio</title>
-  <meta name="description" content="취약점관리, 보안운영, 보안엔지니어 중심 보안 포트폴리오" />
+  <meta name="description" content="배병권의 취약점관리·보안엔지니어 포트폴리오. 취약점 조치관리, KVE, 보안 연구와 검증 가능한 프로젝트를 중심으로 정리했습니다." />
+  <meta name="theme-color" content="#0b1220" />
+  <title>배병권 | Vulnerability Management · Security Engineer</title>
   <link rel="stylesheet" href="./assets/style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div>
-        <p class="eyebrow">Security Engineer · Vulnerability Management · Security Operations</p>
-        <h1>배병권 Security Portfolio</h1>
+  <a class="skip-link" href="#main">본문으로 바로가기</a>
+
+  <header class="site-header" id="top">
+    <nav class="top-nav container" aria-label="주요 메뉴">
+      <a class="brand" href="#top">BBK Security Portfolio</a>
+      <div class="nav-links">
+        <a href="#evidence">경험</a>
+        <a href="#research">연구</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#credentials">자격·활동</a>
+      </div>
+    </nav>
+
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Vulnerability Management · Security Engineer</p>
+        <h1>취약점을 찾는 데서 끝내지 않고<br />조치와 재검증까지 연결합니다.</h1>
         <p class="lead">
-          취약점관리와 보안운영 경험을 기반으로, 취약점 식별·조치관리·보안업무 자동화·AI 보안 활용 방향으로 확장하고 있습니다.
+          취약점 1,138건을 식별하고 1,054건의 조치를 지원했습니다.
+          기술적 위험, 운영 제약, 담당부서 협업을 함께 고려해 실제 개선으로 이어지는 보안업무를 수행했습니다.
         </p>
-        <div class="badges" aria-label="핵심 키워드">
-          <span>Vulnerability Management</span>
-          <span>Security Operations</span>
+        <div class="hero-badges" aria-label="핵심 성과">
+          <span>취약점 1,138건 식별</span>
+          <span>조치 지원 1,054건</span>
+          <span>92.6%</span>
           <span>KVE 3건</span>
-          <span>AI Security</span>
-          <span>Security Automation</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button primary" href="#evidence">핵심 경험 보기</a>
+          <a class="button secondary" href="https://github.com/bbk0416" rel="noopener noreferrer">GitHub 프로필</a>
         </div>
       </div>
-      <aside class="profile-card" aria-label="요약 정보">
-        <h2>Profile</h2>
+
+      <aside class="profile-card" aria-label="프로필 요약">
+        <p class="card-kicker">Profile</p>
         <dl>
-          <div><dt>희망 직무</dt><dd>취약점관리 / 보안엔지니어 / 보안운영</dd></div>
-          <div><dt>확장 분야</dt><dd>AI 보안, AI 활용 보안기획</dd></div>
-          <div><dt>근무지</dt><dd>서울·경기 수도권</dd></div>
-          <div><dt>입사 가능</dt><dd>전역 후 2027.03 기준</dd></div>
-          <div><dt>연락</dt><dd>이력서 요청 시 별도 제공</dd></div>
+          <div><dt>희망 직무</dt><dd>취약점관리 / 보안엔지니어</dd></div>
+          <div><dt>확장 분야</dt><dd>AI 보안 / AI 활용 보안기획</dd></div>
+          <div><dt>병역</dt><dd>육군 대위 전역 예정(2027.02)</dd></div>
+          <div><dt>입사 가능</dt><dd>2027.03</dd></div>
+          <div><dt>근무 희망</dt><dd>서울·경기 수도권</dd></div>
         </dl>
+        <p class="profile-note">이력서와 증빙자료는 제출처에 맞춰 개인정보 최소화본으로 별도 제공합니다.</p>
       </aside>
     </div>
   </header>
 
-  <main>
-    <section class="section">
+  <main id="main">
+    <section class="section" id="evidence">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Core Evidence</p>
+          <p class="eyebrow dark">Core Evidence</p>
           <h2>핵심 경험과 성과</h2>
-          <p>
-            외부 공개용 페이지에는 증빙 원본을 올리지 않고, 제출 요청이 있을 때만 개인정보 최소화본을 선별 제출합니다.
-          </p>
+          <p>공개 페이지에는 실제 업무의 처리 방식과 검증 가능한 수치만 표시합니다.</p>
         </div>
+
         <div class="metrics">
-          <article>
-            <strong>1,138건</strong>
-            <span>취약점 식별</span>
-          </article>
-          <article>
-            <strong>1,054건</strong>
-            <span>조치 지원</span>
-          </article>
-          <article>
-            <strong>92.6%</strong>
-            <span>조치율 관리</span>
-          </article>
-          <article>
-            <strong>KVE 3건</strong>
-            <span>취약점 신고 식별번호</span>
-          </article>
+          <article><strong>1,138</strong><span>취약점 식별</span></article>
+          <article><strong>1,054</strong><span>조치 지원</span></article>
+          <article><strong>92.6%</strong><span>조치율</span></article>
+          <article><strong>3건</strong><span>KVE 식별번호</span></article>
         </div>
 
         <div class="grid two">
           <article class="card">
-            <h3>취약점관리 / 보안운영</h3>
+            <p class="card-kicker">Vulnerability Management</p>
+            <h3>발견 결과를 조치 가능한 업무로 전환</h3>
             <ul>
-              <li>취약점 식별 결과를 조치 우선순위, 담당부서 협조 필요사항, 개선 진행 현황으로 정리</li>
-              <li>보안운영 관점에서 시스템·네트워크·계정·접근통제 영역의 개선사항 관리</li>
-              <li>취약점 탐지 자체보다 실제 조치와 재발 방지로 이어지는 프로세스를 중시</li>
+              <li>취약점 식별 결과를 위험도·업무 영향·조치 가능성 기준으로 정리</li>
+              <li>담당부서 협조사항, 조치기한, 진행상태를 추적하고 재검증</li>
+              <li>시스템·네트워크·계정·접근통제 영역의 개선사항을 운영 관점에서 관리</li>
             </ul>
           </article>
           <article class="card">
-            <h3>대회·훈련·대외 활동</h3>
+            <p class="card-kicker">Evidence Map</p>
+            <h3>대표 증빙</h3>
             <ul>
-              <li>CyberNet 2023 우승</li>
-              <li>Locked Shields 2023 참가</li>
-              <li>CCE 2023 공공부문 준우승</li>
-              <li>대통령 초청 「청년 화이트해커와의 대화」 참석</li>
+              <li>군 경력증명서 및 군 직무능력증명서</li>
+              <li>취약점관리 실적 증빙: 1,138 / 1,054 / 92.6%</li>
+              <li>KVE 취약점 신고 증명서 3건</li>
+              <li>정보보안기사·CPPG·리눅스마스터 1급</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section muted">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Projects</p>
-          <h2>프로젝트</h2>
+    <section class="section muted" id="research">
+      <div class="container research-grid">
+        <div class="section-heading research-heading">
+          <p class="eyebrow dark">Research</p>
+          <h2>Computers &amp; Security 게재 승인</h2>
           <p>
-            소스 공개 여부와 별개로, 공개 포트폴리오에서는 안전한 범위의 개요·설계·결과만 제시합니다.
+            보안 telemetry를 ATT&amp;CK 기반 조사 그래프로 구성하는 방법과 재현 가능한 평가 절차를 제안한 단독저자 연구입니다.
           </p>
         </div>
+        <article class="research-card">
+          <div class="status-row">
+            <span class="status accepted">Accepted for publication</span>
+            <span class="status">Production 진행 중</span>
+          </div>
+          <h3>Cyber Kill Web: Graph Analytics for Security Telemetry Aligned with MITRE ATT&amp;CK® and Reproducible Evaluation</h3>
+          <ul>
+            <li>Big Data Research 최초 투고 후 Desk Reject</li>
+            <li>보완 후 Computers &amp; Security 재투고</li>
+            <li>Major Revision·Minor Revision 대응</li>
+            <li>2026.07.28. 게재 승인, Elsevier production 이관</li>
+          </ul>
+          <p class="fine-print">DOI·온라인 게재·최종 권호 정보는 확정 후 반영합니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow dark">Projects</p>
+          <h2>검증 수준을 표시한 프로젝트</h2>
+          <p>완료·PoC·개발 중 상태를 구분하고, 실제 구현 범위를 넘어선 기능은 표시하지 않습니다.</p>
+        </div>
+
         <div class="project-list">
-          <article class="project-card featured">
-            <div class="project-meta">
-              <span>Contest Main</span>
-              <span>AI Agent Security</span>
-            </div>
-            <h3>MCP-Guard</h3>
-            <p>
-              MCP 기반 Agent 운용 환경에서 도구 권한 설정과 데이터 흐름 통제가 미흡할 때 발생할 수 있는
-              과권한 접근 및 Cross-Tool 데이터 유출 위험을 로컬 테스트 환경에서 검증하는 시스템입니다.
-            </p>
-            <ul>
-              <li>도구 호출 로그 기반 검증</li>
-              <li>허용 도구 목록, 경로 제한, 마스킹, 감사 로그 적용</li>
-              <li>Baseline 대비 Hardened 정책 적용 후 잔여 위험도 비교</li>
-              <li>공격 자동화가 아니라 방어적 검증·정책 완화 효과 측정 목적</li>
-            </ul>
-          </article>
-
-
           <article class="project-card">
             <div class="project-meta">
+              <span class="status poc">PoC</span>
               <span>Security Operations</span>
-              <span>Private Repo</span>
+              <span>Private Source</span>
             </div>
             <h3>OPSHUB</h3>
             <p>
-              폐쇄망·관제 환경을 가정한 티켓 기반 원격운용 통제 및 감사로그 포털 PoC입니다.
-              작업 티켓을 기준으로 RDP/Web RDP 접속 흐름을 통제하고, 접속 사유·운용 모드·접속 대상·차단 이벤트를 감사로그로 남기는 구조를 설계했습니다.
+              폐쇄망·관제 환경을 가정한 티켓 기반 원격운용 통제와 감사로그 포털 PoC입니다.
+              상용 PAM 제품이 아니라 보안운영 통제 흐름을 검증하기 위한 프로젝트입니다.
             </p>
             <ul>
-              <li>FastAPI, PostgreSQL, Apache Guacamole 기반 RDP/Web RDP 접속 흐름 구성</li>
-              <li>Active Ticket 없는 접속 차단, 관리자/일반 사용자 권한 분리, 접속 감사로그 기록</li>
-              <li>CSRF, 서명 세션, Host 제한, CSP, Docker 네트워크 분리 등 보안 하드닝 적용</li>
-              <li>상용 PAM 제품이 아닌 보안운영 통제 흐름 검증용 PoC로 관리</li>
-            </ul>
-          </article>
-
-
-          <article class="project-card">
-            <div class="project-meta">
-              <span>Evidence Integrity</span>
-              <span>Embedded Security</span>
-              <span>Private Repo</span>
-            </div>
-            <h3>AuditSeal-CT</h3>
-            <p>
-              USB-only 증적 봉인·무결성 검증 동글 PoC입니다. 현장 점검 결과를 case 단위로 저장하고,
-              hash, manifest, audit log, seal status를 기준으로 증적 패키지의 무결성과 제출 가능 상태를 판단하는 구조를 설계했습니다.
-            </p>
-            <ul>
-              <li>ESP32-S3 기반 동글 펌웨어와 증적 패키지 구조 설계</li>
-              <li>hash, manifest, audit log, seal status 기반 무결성·제출 가능 상태 판단</li>
-              <li>HID/MSC/자동주입 기능을 배제한 USB-only 점검 보조 흐름</li>
-              <li>SEAL_CONTRACT, USB 진단 필드 등 운영 계약 문서화</li>
-            </ul>
-          </article>
-          <article class="project-card">
-            <div class="project-meta">
-              <span>Web3 Security</span>
-              <span>Private Repo</span>
-            </div>
-            <h3>VulnSignal</h3>
-            <p>
-              CISA KEV 기반 취약점 인텔리전스와 테스트넷 Web3 포인트 구조를 결합한 보안 인프라 MVP입니다.
-              실제 판매·상장·투자 목적은 배제하고 테스트넷 전용으로 설계했습니다.
-            </p>
-            <ul>
-              <li>FastAPI 백엔드, React 대시보드, 조직별 Watchlist/Alert</li>
-              <li>API Key 기반 조직별 조회 구조</li>
-              <li>Solidity 테스트넷 ERC-20, 포인트 장부, 포인트 전환 컨트랙트</li>
+              <li>작업 티켓을 기준으로 RDP/Web RDP 접속 흐름 구성</li>
+              <li>Active Ticket 미보유 접속 차단과 권한 분리</li>
+              <li>접속 사유·대상·운용 모드·차단 이벤트 감사로그 기록</li>
+              <li>FastAPI·PostgreSQL·Apache Guacamole 기반 구성</li>
             </ul>
           </article>
 
           <article class="project-card">
             <div class="project-meta">
-              <span>Security Platform</span>
-              <span>Private Source</span>
+              <span class="status in-progress">개발 중</span>
+              <span>AI Agent Security</span>
+              <span>Contest Project</span>
             </div>
-            <h3>Cyber Armory</h3>
+            <h3>MCP-Guard</h3>
             <p>
-              Flask 기반 보안 운영 플랫폼 프로토타입입니다. 공개용 포트폴리오와 비공개 구현 저장소를 분리해
-              소스·운영정보 노출을 최소화하는 구조로 관리합니다.
+              2026 ICT 보안 취약점 발굴 공모전 출품을 목표로, MCP 기반 AI Agent 환경에서
+              도구 권한과 데이터 흐름 위험을 검증하는 프로젝트를 개발 중입니다.
             </p>
             <ul>
-              <li>인증, 관리자, 대시보드, 파일관리, 실행관리 구조</li>
-              <li>Docker/Kubernetes 배포 문서 및 운영 Runbook</li>
-              <li>CI/CD, 릴리즈 게이트, 보안 검증 절차 문서화</li>
-            </ul>
-          </article>
-
-          <article class="project-card low-priority">
-            <div class="project-meta">
-              <span>Automation</span>
-              <span>Frozen</span>
-            </div>
-            <h3>Pain Radar</h3>
-            <p>
-              공개 API/RSS 기반 반복 신호 수집·분석 자동화 봇입니다. 현재는 내부 실험 프로젝트로 동결 보관하며,
-              자동화·리포팅 역량 보조 사례로만 활용합니다.
-            </p>
-            <ul>
-              <li>GitHub Actions 기반 자동 실행</li>
-              <li>개인정보 최소화 정책과 Markdown 리포트 생성</li>
-              <li>외부 제출 기본 미사용</li>
+              <li>과도한 도구 권한·허용 경로 이탈·민감정보 노출 위협모델 정리</li>
+              <li>허용 도구 목록·경로 제한·입출력 검사·감사로그를 최소 PoC 범위로 설정</li>
+              <li>보호 기능 미적용·적용 환경 비교 실험 계획</li>
+              <li>코드·데모·테스트 결과는 검증 완료 후 공개 가능한 범위에서 반영</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section muted" id="credentials">
       <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow dark">Credentials &amp; Activities</p>
+          <h2>자격과 주요 활동</h2>
+        </div>
         <div class="grid two">
           <article class="card">
-            <h2>자격</h2>
+            <h3>핵심 자격</h3>
             <ul class="compact">
               <li>정보보안기사</li>
               <li>개인정보관리사(CPPG)</li>
@@ -223,42 +191,39 @@
             </ul>
           </article>
           <article class="card">
-            <h2>교육·활동</h2>
+            <h3>대회·훈련·확장 활동</h3>
             <ul class="compact">
-              <li>2026 CVD·VDP 시범사업 참가 신청 완료</li>
-              <li>AI 보안 및 AI 활용 보안기획 관련 기초 교육 이수</li>
-              <li>AICE Associate, 온택트 융합보안 AI보안개론, Git/GitHub 실무활용 등 선택 보조자료 보유</li>
+              <li>CyberNet 2023 한국 우승팀 참가</li>
+              <li>Locked Shields 2023 참가</li>
+              <li>CCE 2023 공공부문 준우승</li>
+              <li>2026년 KISA CVD·VDP 시범사업 정보보호연구자 자격 부여</li>
+              <li>AICE Associate 취득</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section muted">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Portfolio Scope</p>
-          <h2>자료 제공 방식</h2>
-        </div>
-        <div class="notice">
+    <section class="section contact-section">
+      <div class="container contact-card">
+        <div>
+          <p class="eyebrow">Contact &amp; Documents</p>
+          <h2>제출 목적에 맞춘 자료를 제공합니다.</h2>
           <p>
-            공개 포트폴리오에는 주요 경력, 성과, 프로젝트 개요만 정리했습니다.
-          </p>
-          <p>
-            상세 이력서와 증빙자료는 요청 시 제출 목적에 맞춰 별도로 제공드립니다.
+            공개 페이지에는 직접 식별 개인정보, 군 내부정보, 취약점 신고 원문과 비공개 저장소 링크를 게시하지 않습니다.
+            상세 이력서와 증빙은 채용 제안 또는 제출 요청 시 목적에 맞춰 선별합니다.
           </p>
         </div>
+        <a class="button primary light" href="https://github.com/bbk0416" rel="noopener noreferrer">GitHub 프로필 확인</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
+    <div class="container footer-inner">
       <p>© 2026 ByungKwon Bae. Public security portfolio summary.</p>
+      <a href="#top">맨 위로</a>
     </div>
   </footer>
 </body>
 </html>
-
-
-
