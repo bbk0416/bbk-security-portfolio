@@ -5,11 +5,21 @@
 - `CyberNet 2023 한국 우승팀 참가`
 - `Locked Shields 2023 참가`
 - `2026년 KISA CVD·VDP 시범사업 정보보호연구자 자격 부여`
-- `Computers & Security 단독저자 연구논문 게재 승인`
-- 연구 상태는 `Accepted for publication / Production 진행 중`
-- DOI·온라인 게재 확인 전 `Published`, `출판 완료` 표현 금지
+- `Computers & Security 단독저자 연구논문 정식 게재`
+- 서지정보: `Computers & Security 171 (2026) 105085`
+- DOI: `10.1016/j.cose.2026.105085`
+- 온라인 게재일: `2026.07.30.`
+- 공개 논문 링크는 DOI를 사용하고, 출판사 PDF 원본은 사이트 저장소에 올리지 않음
+- 공개 재현성 자료: `https://osf.io/gzs7k/`
 
 ## 프로젝트 상태
+
+### VulnFlow
+- Frozen portfolio baseline
+- 공개 저장소: `https://github.com/bbk0416/vulnflow`
+- 버전 72.0.13 이후 유지보수 반영
+- 공개 manifest 350/350, 버전 정합성 11/11, 제출 준비도 25/25, 비-E2E 회귀시험 244/244
+- 내부 Git mirror와 커밋 메타데이터는 외부 제출하지 않음
 
 ### OPSHUB
 - PoC
@@ -28,10 +38,11 @@
 - KVE 신고 원문 및 재현정보
 - 비공개 저장소 URL·토큰·계정정보
 - 논문 추적용 개인화 URL와 원본 EML
+- 출판사 PDF의 저장소 직접 업로드 및 재배포
 
 ## 업데이트 체크
 
-- 연구 proof·DOI·온라인 게재 상태
 - MCP-Guard 구현 및 테스트 결과
 - CVD·VDP 공개 가능한 최종 결과
 - 전역 예정/완료 상태
+- 논문 정정·권호 변경 여부

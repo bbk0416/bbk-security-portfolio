@@ -3,14 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="배병권의 취약점관리·보안엔지니어 포트폴리오. 취약점 조치관리, KVE, 보안 연구와 검증 가능한 프로젝트를 중심으로 정리했습니다." />
+  <meta name="description" content="배병권의 취약점관리·보안엔지니어 포트폴리오. 취약점 조치관리, KVE, Computers & Security 단독저자 논문, 검증 가능한 보안 프로젝트를 중심으로 정리했습니다." />
   <meta name="theme-color" content="#0b1220" />
   <title>배병권 | Vulnerability Management · Security Engineer</title>
   <link rel="stylesheet" href="./assets/style.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">본문으로 바로가기</a>
-
   <header class="site-header" id="top">
     <nav class="top-nav container" aria-label="주요 메뉴">
       <a class="brand" href="#top">BBK Security Portfolio</a>
@@ -21,7 +20,6 @@
         <a href="#credentials">자격·활동</a>
       </div>
     </nav>
-
     <div class="container hero-grid">
       <div class="hero-copy">
         <p class="eyebrow">Vulnerability Management · Security Engineer</p>
@@ -35,13 +33,13 @@
           <span>조치 지원 1,054건</span>
           <span>92.6%</span>
           <span>KVE 3건</span>
+          <span>Computers &amp; Security 게재</span>
         </div>
         <div class="hero-actions">
           <a class="button primary" href="#evidence">핵심 경험 보기</a>
-          <a class="button secondary" href="https://github.com/bbk0416" rel="noopener noreferrer">GitHub 프로필</a>
+          <a class="button secondary" href="https://github.com/bbk0416" target="_blank" rel="noopener noreferrer">GitHub 프로필</a>
         </div>
       </div>
-
       <aside class="profile-card" aria-label="프로필 요약">
         <p class="card-kicker">Profile</p>
         <dl>
@@ -64,14 +62,12 @@
           <h2>핵심 경험과 성과</h2>
           <p>공개 페이지에는 실제 업무의 처리 방식과 검증 가능한 수치만 표시합니다.</p>
         </div>
-
         <div class="metrics">
           <article><strong>1,138</strong><span>취약점 식별</span></article>
           <article><strong>1,054</strong><span>조치 지원</span></article>
           <article><strong>92.6%</strong><span>조치율</span></article>
           <article><strong>3건</strong><span>KVE 식별번호</span></article>
         </div>
-
         <div class="grid two">
           <article class="card">
             <p class="card-kicker">Vulnerability Management</p>
@@ -100,24 +96,30 @@
       <div class="container research-grid">
         <div class="section-heading research-heading">
           <p class="eyebrow dark">Research</p>
-          <h2>Computers &amp; Security 게재 승인</h2>
+          <h2>Computers &amp; Security 정식 게재</h2>
           <p>
-            보안 telemetry를 ATT&amp;CK 기반 조사 그래프로 구성하는 방법과 재현 가능한 평가 절차를 제안한 단독저자 연구입니다.
+            보안 텔레메트리를 ATT&amp;CK 기반 조사 그래프로 구성하는 방법과 재현 가능한 평가 절차를 제안한 단독저자 연구입니다.
           </p>
         </div>
         <article class="research-card">
           <div class="status-row">
-            <span class="status accepted">Accepted for publication</span>
-            <span class="status">Production 진행 중</span>
+            <span class="status accepted">Published</span>
+            <span class="status">Single Author</span>
+            <span class="status">Volume 171 · 105085</span>
           </div>
-          <h3>Cyber Kill Web: Graph Analytics for Security Telemetry Aligned with MITRE ATT&amp;CK® and Reproducible Evaluation</h3>
+          <h3>Cyber Kill Web: Graph analytics for security telemetry aligned with MITRE ATT&amp;CK® and reproducible evaluation</h3>
           <ul>
-            <li>Big Data Research 최초 투고 후 Desk Reject</li>
-            <li>보완 후 Computers &amp; Security 재투고</li>
-            <li>Major Revision·Minor Revision 대응</li>
-            <li>2026.07.28. 게재 승인, Elsevier production 이관</li>
+            <li>Computers &amp; Security 171 (2026), Article 105085</li>
+            <li>2026.07.27. 게재 승인, 2026.07.30. 온라인 게재</li>
+            <li>통제 시나리오에서 semantic edge Precision·Recall·F1 1.00</li>
+            <li>48개 강건성 구성과 최대 5,000노드·20,000엣지 확장성 평가</li>
+            <li>코드·합성 데이터·평가 보고서를 포함한 재현성 자료 공개</li>
           </ul>
-          <p class="fine-print">DOI·온라인 게재·최종 권호 정보는 확정 후 반영합니다.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://doi.org/10.1016/j.cose.2026.105085" target="_blank" rel="noopener noreferrer">논문 DOI</a>
+            <a class="button secondary dark-button" href="https://osf.io/gzs7k/" target="_blank" rel="noopener noreferrer">재현성 자료(OSF)</a>
+          </div>
+          <p class="fine-print">Bae, B. (2026). Computers &amp; Security, 171, 105085. DOI: 10.1016/j.cose.2026.105085</p>
         </article>
       </div>
     </section>
@@ -129,8 +131,29 @@
           <h2>검증 수준을 표시한 프로젝트</h2>
           <p>완료·PoC·개발 중 상태를 구분하고, 실제 구현 범위를 넘어선 기능은 표시하지 않습니다.</p>
         </div>
-
         <div class="project-list">
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="status accepted">Frozen baseline</span>
+              <span>Vulnerability Management</span>
+              <span>Public Repository</span>
+            </div>
+            <h3>VulnFlow</h3>
+            <p>
+              FastAPI와 SQLite 기반의 취약점 운영 플랫폼입니다. 취약점 우선순위화부터 조치, 증빙, 감사, 복구까지
+              취약점관리 업무 흐름을 재현 가능한 공개 프로젝트로 정리했습니다.
+            </p>
+            <ul>
+              <li>취약점 우선순위·조치관리·증빙·감사·복구 흐름 구현</li>
+              <li>공개 manifest 350/350, 버전 정합성 11/11 검증</li>
+              <li>제출 준비도 25/25, 비-E2E 공개 회귀시험 244/244 통과</li>
+              <li>v72.0.13 이후 유지보수 반영 상태를 Frozen portfolio baseline으로 관리</li>
+            </ul>
+            <div class="hero-actions">
+              <a class="button primary" href="https://github.com/bbk0416/vulnflow" target="_blank" rel="noopener noreferrer">공개 저장소</a>
+            </div>
+          </article>
+
           <article class="project-card">
             <div class="project-meta">
               <span class="status poc">PoC</span>
@@ -214,7 +237,7 @@
             상세 이력서와 증빙은 채용 제안 또는 제출 요청 시 목적에 맞춰 선별합니다.
           </p>
         </div>
-        <a class="button primary light" href="https://github.com/bbk0416" rel="noopener noreferrer">GitHub 프로필 확인</a>
+        <a class="button primary light" href="https://github.com/bbk0416" target="_blank" rel="noopener noreferrer">GitHub 프로필 확인</a>
       </div>
     </section>
   </main>
