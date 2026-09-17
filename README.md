@@ -1,15 +1,10 @@
-﻿# BBK Security Portfolio
+# BBK Security Portfolio
 
-배병권의 공개용 보안 포트폴리오 사이트입니다.
+취약점관리와 보안엔지니어링 경험을 정리한 공개 포트폴리오입니다.
 
-## 공개 기준
+군에서 취약점을 식별한 뒤 담당부서와 조치하고, 실제로 끝났는지 다시 확인하는 일을 해왔습니다. 공개 페이지에는 이 경험과 직접 연결되는 자료만 남기고, 확인되지 않은 성과나 과한 표현은 넣지 않습니다.
 
-- 취약점관리 실적과 검증 가능한 연구·프로젝트만 공개합니다.
-- 개인정보, 군 내부정보, 취약점 신고 원문, 비공개 저장소 링크는 포함하지 않습니다.
-- 합성·로컬 검증과 실제 사용자·실환경 검증을 구분합니다.
-- 프로젝트 수보다 목표 직무와의 직접 연결성, 현재 상태, 검증 범위를 우선합니다.
-
-## 핵심 실적
+## 주요 실적
 
 - 취약점 1,138건 식별
 - 1,054건 조치 완료 확인
@@ -19,23 +14,25 @@
 
 ## 대표 프로젝트
 
-1. **VulnFlow** — Free Public Beta / Vulnerability Management
-2. **KillWeb** — Computers & Security 출판 연구 / 재현 아티팩트
-3. **BreachScope** — Public Beta / DFIR·Windows telemetry
-4. **VulnSignal** — Portfolio MVP / Vulnerability Intelligence·Security Engineering
+- **VulnFlow** — 실무에서 해온 취약점 조치·재검증 흐름을 옮겨 만든 Free Public Beta
+- **KillWeb** — Computers & Security에 게재한 단독저자 연구와 재현 자료
+- **BreachScope** — Windows Event Log를 사건 흐름과 케이스로 연결하는 DFIR 도구
+- **VulnSignal** — KEV·EPSS·CPE를 이용한 취약점 인텔리전스 포트폴리오 MVP
 
-직무별 보조자료로 MCP-Guard, AuditSeal-CT, ORACLE-ZERO 등을 선별해 사용합니다. 보조 프로젝트를 대표 프로젝트와 별도 성과처럼 중복 계산하지 않습니다.
+MCP-Guard, AuditSeal-CT, ORACLE-ZERO 같은 프로젝트는 지원 직무와 직접 관련이 있을 때만 보조자료로 사용합니다.
+
+## 공개할 때 지키는 기준
+
+개인정보, 군 내부정보, 취약점 신고 원문은 공개하지 않습니다. 합성 데이터나 로컬 테스트 결과도 실제 고객 환경이나 운영 환경에서 검증된 것처럼 쓰지 않습니다.
 
 ## 로컬 확인
-
-정적 사이트이므로 저장소 루트에서 다음과 같이 확인합니다.
 
 ```bash
 python -m http.server 8000
 ```
 
-브라우저에서 `http://localhost:8000`을 엽니다.
+브라우저에서 `http://localhost:8000`을 열면 됩니다.
 
 ## 배포
 
-GitHub Pages의 `main` 브랜치 루트 배포를 기준으로 합니다.
+GitHub Pages의 `main` 브랜치 루트에서 배포합니다.
