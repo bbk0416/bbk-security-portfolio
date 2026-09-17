@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="배병권의 취약점관리·보안엔지니어 포트폴리오. 취약점 조치관리, KVE, Computers & Security 단독저자 논문, 검증 가능한 보안 프로젝트를 중심으로 정리했습니다." />
+  <meta name="description" content="배병권의 취약점관리·보안엔지니어 포트폴리오. 실제 업무에서 해온 취약점 조치·재검증 경험과 관련 프로젝트를 정리했습니다." />
   <meta name="theme-color" content="#0b1220" />
   <title>배병권 | Vulnerability Management · Security Engineer</title>
   <link rel="stylesheet" href="./assets/style.css" />
@@ -26,7 +26,7 @@
         <h1>취약점을 찾는 데서 끝내지 않고<br />조치와 재검증까지 연결합니다.</h1>
         <p class="lead">
           취약점 1,138건을 식별했고, 후속 이행점검을 통해 1,054건의 조치 완료를 확인했습니다.
-          기술적 위험, 운영 제약, 담당부서 협업을 함께 고려해 실제 개선으로 이어지는 보안업무를 수행했습니다.
+          취약점만 적어두고 끝내지 않고, 담당부서와 조치 일정을 맞추고 실제 반영됐는지 다시 확인하는 일을 해왔습니다.
         </p>
         <div class="hero-badges" aria-label="핵심 성과">
           <span>취약점 1,138건 식별</span>
@@ -59,8 +59,8 @@
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow dark">Core Evidence</p>
-          <h2>핵심 경험과 성과</h2>
-          <p>공개 페이지에는 실제 업무의 처리 방식과 검증 가능한 수치만 표시합니다.</p>
+          <h2>실무에서 해온 일</h2>
+          <p>숫자만 보여주기보다 실제로 어떤 일을 했는지 같이 적었습니다.</p>
         </div>
         <div class="metrics">
           <article><strong>1,138</strong><span>취약점 식별</span></article>
@@ -71,11 +71,11 @@
         <div class="grid two">
           <article class="card">
             <p class="card-kicker">Vulnerability Management</p>
-            <h3>발견 결과를 조치 가능한 업무로 전환</h3>
+            <h3>찾은 취약점이 실제로 조치되기까지</h3>
             <ul>
-              <li>취약점 식별 결과를 위험도·업무 영향·조치 가능성 기준으로 정리</li>
-              <li>담당부서 협조사항, 조치기한, 진행상태를 추적하고 재검증</li>
-              <li>시스템·네트워크·계정·접근통제 영역의 개선사항을 운영 관점에서 관리</li>
+              <li>찾은 취약점을 위험도와 업무 영향 기준으로 정리</li>
+              <li>담당부서와 조치 방법과 일정을 맞추고 진행상태를 계속 확인</li>
+              <li>조치가 끝났다고 보고된 뒤에도 다시 확인해 실제 반영 여부를 점검</li>
             </ul>
           </article>
           <article class="card">
@@ -127,9 +127,9 @@
     <section class="section" id="projects">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow dark">Selected Projects</p>
-          <h2>직무와 직접 연결되는 프로젝트만 선별했습니다.</h2>
-          <p>프로젝트 수보다 실제 경력과의 연결성, 검증 범위, 한계를 우선합니다.</p>
+          <p class="eyebrow dark">Projects</p>
+          <h2>실무 경험과 연결되는 프로젝트</h2>
+          <p>많이 보여주기보다 지금 지원하는 직무와 연결되는 것만 남겼습니다.</p>
         </div>
         <div class="project-list">
           <article class="project-card">
@@ -137,7 +137,7 @@
               <span class="status accepted">Free Public Beta</span><span>Vulnerability Management</span><span>Public Repository</span>
             </div>
             <h3>VulnFlow</h3>
-            <p>실무에서 경험한 취약점 조치·재검증 흐름을 local-first 애플리케이션으로 구현했습니다.</p>
+            <p>군에서 해왔던 취약점 조치·재검증 흐름을 민간 환경에서도 설명할 수 있도록 만든 프로젝트입니다.</p>
             <ul>
               <li>Nessus·OpenVAS·CSV·XLSX 결과 가져오기와 finding·asset 정규화</li>
               <li>KEV·EPSS·자산 맥락 기반 우선순위와 담당자·기한·조치·재검증·승인 흐름</li>
@@ -152,7 +152,7 @@
               <span class="status accepted">Public Beta</span><span>DFIR / Threat Analysis</span><span>Public Repository</span>
             </div>
             <h3>BreachScope</h3>
-            <p>Windows Event Log 중심으로 입력·정규화·탐지·상관분석·시나리오·케이스·리포트를 연결하는 DFIR/triage 도구입니다.</p>
+            <p>Windows 이벤트를 보면서 개별 탐지 결과를 사건 흐름으로 이어 보고 싶어 만든 DFIR 도구입니다.</p>
             <ul>
               <li>EVTX/JSONL 처리, 규칙 기반 탐지, 시간·세션 기반 상관분석</li>
               <li>MITRE ATT&amp;CK 시나리오, Hayabusa 결과 연계, HTML·JSON·CSV·PDF 리포트</li>
@@ -167,7 +167,7 @@
               <span class="status poc">Portfolio MVP</span><span>Vulnerability Intelligence</span><span>Private Source</span>
             </div>
             <h3>VulnSignal</h3>
-            <p>CISA KEV·EPSS·CPE를 중심으로 조직별 취약점 인텔리전스와 보안 백엔드 제어를 구현한 포트폴리오 MVP입니다.</p>
+            <p>KEV·EPSS·CPE를 취약점 우선순위 판단에 같이 써보기 위해 만든 포트폴리오 프로젝트입니다.</p>
             <ul>
               <li>조직별 asset/watchlist/alert와 exact CPE 기반 매칭</li>
               <li>API key scope·rotation, audit event, rate limiting, PostgreSQL/Alembic</li>
@@ -181,7 +181,7 @@
               <span class="status accepted">Published Research</span><span>Security Telemetry / ATT&amp;CK</span><span>Reproducible Artifact</span>
             </div>
             <h3>KillWeb</h3>
-            <p>Computers &amp; Security 171 (2026), Article 105085에 게재된 단독저자 연구입니다. 제품보다 출판 연구와 재현 가능한 평가 자료가 핵심입니다.</p>
+            <p>보안 이벤트가 흩어져 있을 때 조사 맥락을 놓치기 쉽다는 문제에서 시작한 단독저자 연구입니다. Computers &amp; Security 171 (2026), Article 105085에 게재됐습니다.</p>
             <ul>
               <li>보안 텔레메트리를 ATT&amp;CK 기반 조사 그래프로 구성</li>
               <li>통제 시나리오와 합성 데이터 기반 재현 평가</li>
@@ -195,7 +195,7 @@
           </article>
         </div>
         <div class="section-heading" style="margin-top:2.5rem">
-          <p class="eyebrow dark">Role-specific Supporting Work</p>
+          <p class="eyebrow dark">Other Work</p>
           <p><strong>MCP-Guard</strong> — AI Agent 실행경계·정책 Blind Spot 검증 PoC, 공모전 제출본 동결 · <strong>AuditSeal-CT</strong> — ESP32-S3 기반 USB 감사 동글 프로토타입, 실기기 E2E 검증 전까지 구현 범위만 표시 · <strong>ORACLE-ZERO</strong> — 합성 환경의 방어조치 전후 공격경로 비교 시뮬레이터.</p>
         </div>
       </div>
