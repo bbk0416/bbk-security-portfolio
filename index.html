@@ -127,70 +127,76 @@
     <section class="section" id="projects">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow dark">Projects</p>
-          <h2>검증 수준을 표시한 프로젝트</h2>
-          <p>완료·PoC·개발 중 상태를 구분하고, 실제 구현 범위를 넘어선 기능은 표시하지 않습니다.</p>
+          <p class="eyebrow dark">Selected Projects</p>
+          <h2>직무와 직접 연결되는 프로젝트만 선별했습니다.</h2>
+          <p>프로젝트 수보다 실제 경력과의 연결성, 검증 범위, 한계를 우선합니다.</p>
         </div>
         <div class="project-list">
           <article class="project-card">
             <div class="project-meta">
-              <span class="status accepted">Free Public Beta</span>
-              <span>Vulnerability Management</span>
-              <span>Public Repository</span>
+              <span class="status accepted">Free Public Beta</span><span>Vulnerability Management</span><span>Public Repository</span>
             </div>
             <h3>VulnFlow</h3>
-            <p>
-              FastAPI와 SQLite 기반의 취약점 운영 플랫폼입니다. 취약점 우선순위화부터 조치, 증빙, 감사, 복구까지
-              취약점관리 업무 흐름을 재현 가능한 공개 프로젝트로 정리했습니다.
-            </p>
+            <p>실무에서 경험한 취약점 조치·재검증 흐름을 local-first 애플리케이션으로 구현했습니다.</p>
             <ul>
-              <li>취약점 우선순위·조치관리·증빙·감사·복구 흐름 구현</li>
               <li>Nessus·OpenVAS·CSV·XLSX 결과 가져오기와 finding·asset 정규화</li>
-              <li>KEV·EPSS·자산 맥락 기반 우선순위와 조치→재검증→승인 흐름 구현</li>
-              <li>현재 공개 릴리스 v72.0.102, Free Public Beta; 고객·유료 사용 실적은 주장하지 않음</li>
+              <li>KEV·EPSS·자산 맥락 기반 우선순위와 담당자·기한·조치·재검증·승인 흐름</li>
+              <li>현재 공개 릴리스 v72.0.102, Free Public Beta</li>
+              <li>고객·유료 사용·상용 SLA·PMF는 확인된 사실로 주장하지 않음</li>
+            </ul>
+            <div class="hero-actions"><a class="button primary" href="https://github.com/bbk0416/vulnflow" target="_blank" rel="noopener noreferrer">공개 저장소</a></div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="status accepted">Public Beta</span><span>DFIR / Threat Analysis</span><span>Public Repository</span>
+            </div>
+            <h3>BreachScope</h3>
+            <p>Windows Event Log 중심으로 입력·정규화·탐지·상관분석·시나리오·케이스·리포트를 연결하는 DFIR/triage 도구입니다.</p>
+            <ul>
+              <li>EVTX/JSONL 처리, 규칙 기반 탐지, 시간·세션 기반 상관분석</li>
+              <li>MITRE ATT&amp;CK 시나리오, Hayabusa 결과 연계, HTML·JSON·CSV·PDF 리포트</li>
+              <li>현재 공개 릴리스 v2.0.1</li>
+              <li>평가 데이터는 합성·통제 데이터이며 기업 production 탐지 정확도를 주장하지 않음</li>
+            </ul>
+            <div class="hero-actions"><a class="button primary" href="https://github.com/bbk0416/BreachScope" target="_blank" rel="noopener noreferrer">공개 저장소</a></div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="status poc">Portfolio MVP</span><span>Vulnerability Intelligence</span><span>Private Source</span>
+            </div>
+            <h3>VulnSignal</h3>
+            <p>CISA KEV·EPSS·CPE를 중심으로 조직별 취약점 인텔리전스와 보안 백엔드 제어를 구현한 포트폴리오 MVP입니다.</p>
+            <ul>
+              <li>조직별 asset/watchlist/alert와 exact CPE 기반 매칭</li>
+              <li>API key scope·rotation, audit event, rate limiting, PostgreSQL/Alembic</li>
+              <li>Docker Compose 및 로컬/내부 staging 검증</li>
+              <li>Production SaaS·고객 검증 완료 상태는 아님</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="status accepted">Published Research</span><span>Security Telemetry / ATT&amp;CK</span><span>Reproducible Artifact</span>
+            </div>
+            <h3>KillWeb</h3>
+            <p>Computers &amp; Security 171 (2026), Article 105085에 게재된 단독저자 연구입니다. 제품보다 출판 연구와 재현 가능한 평가 자료가 핵심입니다.</p>
+            <ul>
+              <li>보안 텔레메트리를 ATT&amp;CK 기반 조사 그래프로 구성</li>
+              <li>통제 시나리오와 합성 데이터 기반 재현 평가</li>
+              <li>코드·합성 데이터·평가 보고서를 포함한 재현성 자료 공개</li>
+              <li>상용 위협분석 플랫폼 또는 production 운영 실적을 주장하지 않음</li>
             </ul>
             <div class="hero-actions">
-              <a class="button primary" href="https://github.com/bbk0416/vulnflow" target="_blank" rel="noopener noreferrer">공개 저장소</a>
+              <a class="button primary" href="https://doi.org/10.1016/j.cose.2026.105085" target="_blank" rel="noopener noreferrer">논문 DOI</a>
+              <a class="button secondary dark-button" href="https://osf.io/gzs7k/" target="_blank" rel="noopener noreferrer">재현성 자료</a>
             </div>
           </article>
-
-          <article class="project-card">
-            <div class="project-meta">
-              <span class="status poc">PoC</span>
-              <span>Security Operations</span>
-              <span>Private Source</span>
-            </div>
-            <h3>OPSHUB</h3>
-            <p>
-              폐쇄망·관제 환경을 가정한 티켓 기반 원격운용 통제와 감사로그 포털 PoC입니다.
-              상용 PAM 제품이 아니라 보안운영 통제 흐름을 검증하기 위한 프로젝트입니다.
-            </p>
-            <ul>
-              <li>작업 티켓을 기준으로 RDP/Web RDP 접속 흐름 구성</li>
-              <li>Active Ticket 미보유 접속 차단과 권한 분리</li>
-              <li>접속 사유·대상·운용 모드·차단 이벤트 감사로그 기록</li>
-              <li>FastAPI·PostgreSQL·Apache Guacamole 기반 구성</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <div class="project-meta">
-              <span class="status accepted">공모전 제출 완료</span>
-              <span>AI Agent Security</span>
-              <span>Contest Project</span>
-            </div>
-            <h3>MCP-Guard</h3>
-            <p>
-              2026 ICT 보안 취약점 발굴 공모전에 제출한 프로젝트로, MCP 기반 AI Agent 환경에서
-              정책과 실제 실행 경계 사이의 Blind Spot을 변이 기반으로 검증하는 PoC입니다.
-            </p>
-            <ul>
-              <li>MCP 보안정책·실행경계의 Blind Spot을 변이 기반으로 검증하는 구조 설계</li>
-              <li>허용 도구·경로·입출력·감사로그 관련 정책 경계 테스트</li>
-              <li>2026.09.03. 공모전 제출 완료, 제출본 동결</li>
-              <li>수상·선정·외부 검증 결과는 확정 전까지 주장하지 않음</li>
-            </ul>
-          </article>
+        </div>
+        <div class="section-heading" style="margin-top:2.5rem">
+          <p class="eyebrow dark">Role-specific Supporting Work</p>
+          <p><strong>MCP-Guard</strong> — AI Agent 실행경계·정책 Blind Spot 검증 PoC, 공모전 제출본 동결 · <strong>AuditSeal-CT</strong> — ESP32-S3 기반 USB 감사 동글 프로토타입, 실기기 E2E 검증 전까지 구현 범위만 표시 · <strong>ORACLE-ZERO</strong> — 합성 환경의 방어조치 전후 공격경로 비교 시뮬레이터.</p>
         </div>
       </div>
     </section>
