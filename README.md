@@ -36,3 +36,17 @@ python -m http.server 8000
 ## 배포
 
 GitHub Pages의 `main` 브랜치 루트에서 배포합니다.
+
+## BBK-DFIR Controlled Private Beta
+
+I am recruiting **one independent Windows DFIR tester** for a controlled private-beta run.
+
+- 30–60 minutes
+- isolated Windows 10/11 VM or separate test machine
+- supplied sample event data
+- direct PASS / PASS WITH ISSUES / FAIL feedback
+- no purchase, testimonial, or promotion required
+
+Details and application:
+https://github.com/bbk0416/bbk-security-portfolio/issues/2
+
