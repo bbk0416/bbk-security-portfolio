@@ -50,3 +50,17 @@ I am recruiting **one independent Windows DFIR tester** for a controlled private
 Details and application:
 https://github.com/bbk0416/bbk-security-portfolio/issues/2
 
+## BBK-DFIR Dependency License Review
+
+I am also looking for **one volunteer independent open-source licensing/compliance reviewer** for a narrow three-package review.
+
+Exact scope:
+
+- `crcmod 1.7`
+- `hexdump 3.3`
+- `x25519 0.0.2`
+
+This is a **volunteer / no-fee request**. A compact evidence packet with the exact wheels, hashes, SBOM, notice materials, primary-source evidence, and result template is ready.
+
+Details and application:
+https://github.com/bbk0416/bbk-security-portfolio/issues/3
